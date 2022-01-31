@@ -1,0 +1,751 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>cEllphone1h Store</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Electro Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        } //carousel - item item1 active
+    </script>
+    <!-- //Meta tag Keywords -->
+    <link href="~/css/style1.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/css/style2.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom-Files -->
+    <link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Bootstrap css -->
+    <link href="~/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="~/css/fontawesome-all.css">
+    <!-- Font-Awesome-Icons-CSS -->
+    <link href="~/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- pop-up-box -->
+    <link href="~/css/menu.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- menu style -->
+    <!-- //Custom-Files -->
+    <!-- web fonts -->
+
+
+</head>
+<body>
+    <!-- //web fonts -->
+    <div class="agile-main-top">
+        <div class="container-fluid">
+            <div class="row main-top-w3l py-2">
+                <div class="col-lg-4 header-most-top">
+                    <p class="text-white text-lg-left text-center">
+                        Ưu đãi và giảm giá hàng đầu
+                        <i class="fas fa-shopping-cart ml-1"></i>
+                    </p>
+                </div>
+                <div class="col-lg-8 header-right mt-lg-0 mt-2">
+                    <!-- header lists -->
+                    <ul>
+                        <li class="text-center border-right text-white">
+                            <a class="play-icon popup-with-zoom-anim text-white" href="#small-dialog1">
+                                <i class="fas fa-map-marker mr-2"></i>Chọn nơi bạn ở
+                            </a>
+                        </li>
+                        <li class="text-center border-right text-white">
+                            <a href="#" data-toggle="" data-target="#exampleModal" class="text-white">
+                                <i class="fas fa-truck mr-2"></i>Theo dõi giỏ hàng
+                            </a>
+                        </li>
+                        <li class="text-center border-right text-white">
+                            <i class="fas fa-phone mr-2"></i> 0707 183 201
+
+                        </li>
+
+                        @Html.Action("TenDangNhap", "Home")
+
+
+                    </ul>
+                    <!-- //header lists -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="small-dialog1" class="mfp-hide">
+        <div class="select-city">
+            <h3>
+                <i class="fas fa-map-marker"></i> Hãy chọn nơi bạn ở
+            </h3>
+            <select class="list_of_cities">
+                <optgroup label="Miền Bắc">
+                    <option selected style="display:none;color:#eee;">Chọn tỉnh/ thành phố</option>
+                    <option>Hà Nội</option>
+                    <option>Hà Nam</option>
+                    <option>Hà Tỉnh</option>             
+                </optgroup>
+                <optgroup label="Miền Trung">
+                    <option>Huế</option>
+                    <option>Kom Tum</option>
+                    <option>Gia Lai</option>   
+                </optgroup>
+                <optgroup label="Miền Nam">
+                    <option>TP Hồ Chí Minh</option>
+                    <option>Đồng Nai</option>
+                    <option>Bà rịa- Vũng Tàu</option>         
+                </optgroup>          
+            </select>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- log in -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center">Đăng nhập</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label class="col-form-label">Username</label>
+                            <input type="text" class="form-control" placeholder=" " name="Name" required="">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Password</label>
+                            <input type="password" class="form-control" placeholder=" " name="Password" required="">
+                        </div>
+                        <div class="right-w3l">
+                            <input type="submit" class="form-control" value="Log in">
+                        </div>
+                        <div class="sub-w3l">
+                            <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                <label class="custom-control-label" for="customControlAutosizing">Remember me?</label>
+                            </div>
+                        </div>
+                        <p class="text-center dont-do mt-3">
+                            Don't have an account?
+                            <a href="#" data-toggle="modal" data-target="#exampleModal2">
+                                Đăng ký
+                            </a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- register -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Đăng ký</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label class="col-form-label">Your Name</label>
+                            <input type="text" class="form-control" placeholder=" " name="Name" required="">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Email</label>
+                            <input type="email" class="form-control" placeholder=" " name="Email" required="">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Password</label>
+                            <input type="password" class="form-control" placeholder=" " name="Password" id="password1" required="">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Confirm Password</label>
+                            <input type="password" class="form-control" placeholder=" " name="Confirm Password" id="password2" required="">
+                        </div>
+                        <div class="right-w3l">
+                            <input type="submit" class="form-control" value="Register">
+                        </div>
+                        <div class="sub-w3l">
+                            <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing2">
+                                <label class="custom-control-label" for="customControlAutosizing2">I Accept to the Terms & Conditions</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header-bottom-->
+    <div class="header-bot">
+        <div class="container">
+            <div class="row header-bot_inner_wthreeinfo_header_mid">
+                <!-- logo -->
+                <div class="col-md-3 logo_agile">
+                    <h1 class="text-center">
+                        <a href="@Url.Action("Index", "Home")" class="font-weight-bold font-italic">
+                            <img src="~/images/logo2.png" alt=" " class="img-fluid">cEllphone1h
+                        </a>
+                    </h1>
+                </div>
+                <!-- //logo -->
+                <!-- header-bot -->
+                <div class="col-md-9 header mt-4 mb-md-0 mb-4">
+                    <div class="row">
+                        <!-- search -->
+                        @*<div class="col-10 agileits_search">
+            <form class="form-inline" action="#" method="post">
+                <input style="height:50px; width:200px" class="form-control mr-sm-2" type="search" placeholder="Sản phẩm cần tìm" aria-label="Search" required>
+                <button class="btn my-2 my-sm-0" type="submit">Tìm kiếm</button>
+
+            </form>
+        </div>*@
+                        <!-- //search -->
+                        <!-- cart details -->
+
+                        <a style="margin-left:auto"> @Html.Action("TongSoLuong", "Home")</a>
+
+
+                        <!-- //cart details -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- shop locator (popup) -->
+    <!-- //header-bottom -->
+    <!-- navigation -->
+    <div class="navbar-inner">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="agileits-navi_search">
+                    <form action="#" method="post">
+                        <select id="agileinfo-nav_search" name="agileinfo_search" class="border" required="">
+                            @Html.Action("TheLoai", "Home")
+
+                        </select>
+                    </form>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto text-center mr-xl-5">
+                        <li class="nav-item active mr-lg-2 mb-lg-0 mb-2">
+                            <a class="nav-link" href="@Url.Action("Index","Home")">
+                                Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Electronics
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="agile_inner_drop_nav_info p-4">
+                                    <h5 class="mb-3">Mobiles, Computers</h5>
+                                    <div class="row">
+                                        <div class="col-sm-6 multi-gd-img">
+                                            <ul class="multi-column-dropdown">
+                                                <li>
+                                                    <a href="../Home/Product1">All Mobile Phones</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product1">All Mobile Accessories</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product1">Cases & Covers</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product1">Screen Protectors</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product1">Power Banks</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product1">All Certified Refurbished</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product1">Tablets</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product1">Wearable Devices</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product1">Smart Home</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 multi-gd-img">
+                                            <ul class="multi-column-dropdown">
+                                                <li>
+                                                    <a href="../Home/Product1">Laptops</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product1">Drives & Storage</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product1">Printers & Ink</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product1">Networking Devices</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product1">Computer Accessories</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product1">Game Zone</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product1">Software</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Appliances
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="agile_inner_drop_nav_info p-4">
+                                    <h5 class="mb-3">TV, Appliances, Electronics</h5>
+                                    <div class="row">
+                                        <div class="col-sm-6 multi-gd-img">
+                                            <ul class="multi-column-dropdown">
+                                                <li>
+                                                    <a href="../Home/Product2">Televisions</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product2">Home Entertainment Systems</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product2">Headphones</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product2">Speakers</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product2">MP3, Media Players & Accessories</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product2">Audio & Video Accessories</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product2">Cameras</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product2">DSLR Cameras</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product2">Camera Accessories</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 multi-gd-img">
+                                            <ul class="multi-column-dropdown">
+                                                <li>
+                                                    <a href="../Home/Product2">Musical Instruments</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product2">Gaming Consoles</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product2">All Electronics</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product2">Air Conditioners</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product2">Refrigerators</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product2">Washing Machines</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product2">Kitchen & Home Appliances</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../Home/Product2">Heating & Cooling Appliances</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="../Home/Product2">All Appliances</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+                            <a class="nav-link" href="">About Us</a>
+                        </li>
+
+                        <li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pages
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="../Home/Product1">Product 1</a>
+                                <a class="dropdown-item" href="../Home/Product2">Product 2</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../Home/Single1">Single Product 1</a>
+                                <a class="dropdown-item" href="../Home/Single2">Single Product 2</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../Home/Checkout">Checkout Page</a>
+                                <a class="dropdown-item" href="../Home/Payment">Payment Page</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Home/Contact">Contact Us</a>
+                        </li>
+                  
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="~/images/banner.png" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="~/images/banner1.png" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="~/images/banner2.png" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
+    <footer>
+        <div class="join-w3l1 py-sm-5 py-4">
+            <div class="container py-xl-4 py-lg-2">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="join-agile text-left p-4">
+                            <div class="row">
+                                <div class="col-sm-7 offer-name">
+                                    <h6>Smooth, Rich & Loud Audio</h6>
+                                    <h4 class="mt-2 mb-3">Branded Headphones</h4>
+                                    <p>Sale up to 25% off all in store</p>
+                                </div>
+                                <div class="col-sm-5 offerimg-w3l">
+                                    <img src="../images/off1.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-lg-0 mt-5">
+                        <div class="join-agile text-left p-4">
+                            <div class="row ">
+                                <div class="col-sm-7 offer-name">
+                                    <h6>A Bigger Phone</h6>
+                                    <h4 class="mt-2 mb-3">Smart Phones 5</h4>
+                                    <p>Free shipping order over $100</p>
+                                </div>
+                                <div class="col-sm-5 offerimg-w3l">
+                                    <img src="../images/off2.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-top-first">
+            <div class="container py-md-5 py-sm-4 py-3">
+                <!-- footer first section -->
+                <h2 class="footer-top-head-w3l font-weight-bold mb-2">Electronics :</h2>
+                <p class="footer-main mb-4">
+                    If you're considering a new laptop, looking for a powerful new car stereo or shopping for a new HDTV, we make it easy to
+                    find exactly what you need at a price you can afford. We offer Every Day Low Prices on TVs, laptops, cell phones, tablets
+                    and iPads, video games, desktop computers, cameras and camcorders, audio, video and more.
+                </p>
+                <!-- //footer first section -->
+                <!-- footer second section -->
+                <div class="row w3l-grids-footer border-top border-bottom py-sm-4 py-3">
+                    <div class="col-md-4 offer-footer">
+                        <div class="row">
+                            <div class="col-4 icon-fot">
+                                <i class="fas fa-dolly"></i>
+                            </div>
+                            <div class="col-8 text-form-footer">
+                                <h3>Free Shipping</h3>
+                                <p>on orders over $100</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 offer-footer my-md-0 my-4">
+                        <div class="row">
+                            <div class="col-4 icon-fot">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                            <div class="col-8 text-form-footer">
+                                <h3>Fast Delivery</h3>
+                                <p>World Wide</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 offer-footer">
+                        <div class="row">
+                            <div class="col-4 icon-fot">
+                                <i class="far fa-thumbs-up"></i>
+                            </div>
+                            <div class="col-8 text-form-footer">
+                                <h3>Big Choice</h3>
+                                <p>of Products</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //footer second section -->
+            </div>
+        </div>
+        <!-- footer third section -->
+        <div class="w3l-middlefooter-sec">
+            <div class="container py-md-5 py-sm-4 py-3">
+                <div class="row footer-info w3-agileits-info">
+                    <!-- footer categories -->
+                    <div class="col-md-3 col-sm-6 footer-grids">
+                        <h3 class="text-white font-weight-bold mb-3">Categories</h3>
+                        <ul>
+                            <li class="mb-3">
+                                <a href="../Home/Product1">Mobiles </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="../Home/Product1">Computers</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="../Home/Product1">TV, Audio</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="../Home/Product2">Smartphones</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="../Home/Product1">Washing Machines</a>
+                            </li>
+                            <li>
+                                <a href="../Home/Product2">Refrigerators</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //footer categories -->
+                    <!-- quick links -->
+                    <div class="col-md-3 col-sm-6 footer-grids mt-sm-0 mt-4">
+                        <h3 class="text-white font-weight-bold mb-3">Quick Links</h3>
+                        <ul>
+                            <li class="mb-3">
+                                <a href="">About Us</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="../Home/Contact">Contact Us</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="">Help</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="">Faqs</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="">Terms of use</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 footer-grids mt-md-0 mt-4">
+                        <h3 class="text-white font-weight-bold mb-3">Get in Touch</h3>
+                        <ul>
+                            <li class="mb-3">
+                                <i class="fas fa-map-marker"></i>Long Thành, Đồng Nai.
+                            </li>
+                            @*<li class="mb-3">
+                                    <i class="fas fa-mobile"></i> 0987628314
+                                </li>*@
+                            <li class="mb-3">
+                                <i class="fas fa-phone"></i> 0707183201
+                            </li>
+                            @*<li class="mb-3">
+                                    <i class="fas fa-envelope-open"></i>
+                                    <a href="mailto:example@mail.com">151901403@dntu.edu.vn</a>
+                                </li>*@
+                            <li>
+                                <i class="fas fa-envelope-open"></i>
+                                <a href="mailto:example@mail.com">nghivu201@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 footer-grids w3l-agileits mt-md-0 mt-4">
+                        <!-- newsletter -->
+                        <h3 class="text-white font-weight-bold mb-3">Newsletter</h3>
+                        <p class="mb-3">Free Delivery on your first order!</p>
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email" name="email" required="">
+                                <input type="submit" value="Go">
+                            </div>
+                        </form>
+                        <!-- //newsletter -->
+                        <!-- social icons -->
+                        <div class="footer-grids  w3l-socialmk mt-3">
+                            <h3 class="text-white font-weight-bold mb-3">Follow Us on</h3>
+                            <div class="social">
+                                <ul>
+                                    <li>
+                                        <a class="icon fb" href="https://www.facebook.com/profile.php?id=100007400776925">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="icon tw" href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="icon gp" href="#">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //social icons -->
+                    </div>
+                    <div class="col-md-offset-0 col-sm-auto footer-grids">
+                        <div class="sub-some child-momu mt-auto">
+                            <h3 class="text-white font-weight-bold mb-3">Payment Method</h3>
+                            <ul>
+                                <li>
+                                    <img height="50" width="50" src="../images/16.jpg" alt="">
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <hr />
+                        <p class="text-center text-white">
+                            © 2022 Electro Store. All rights reserved | Design by Vũ Thành Nghị - Nguyễn Bá Hòa - Nguyễn Duy Hưng.
+                        </p>
+                    </div>
+                    <!-- //quick links -->
+
+                </div>
+            </div>
+        </div>
+    </footer>
+ 
+    @*<script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>*@
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>
+    <!-- Messenger Plugin chat Code -->
+    <!--<div id="fb-root"></div>-->
+
+    <!-- Your Plugin chat code -->
+    <!--<div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "111477354760896");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>-->
+
+    <!-- Your SDK code -->
+    <!--<script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>-->
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+﻿@using CKLTW.Models
+@{
+    List<SanPhamModels> items = Session["GIOHANG"] as List<SanPhamModels>;
+}
+@if (ViewBag.Giohang != null)
+{
+    <div class="col-sm-6">
+        <div class="shopping-item">
+            <a href="@Url.Action("Checkout", "Home")">Thành Tiền - <span class="cart-amunt">@items.Sum(x => (int)x.GiaTong).ToString("#,##0").Replace(',', ',') đ</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">@items.Sum(x => x.SoLuong)</span></a>
+        </div>
+
+
+    </div>
+}
+
