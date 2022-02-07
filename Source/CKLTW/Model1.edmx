@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="cellphone1hModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="GKLTWModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="CHITIETDONTHANG">
           <Key>
             <PropertyRef Name="MaDonHang" />
@@ -132,7 +132,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="cellphone1hModelStoreContainer">
+        <EntityContainer Name="GKLTWModelStoreContainer">
           <EntitySet Name="CHITIETDONTHANG" EntityType="Self.CHITIETDONTHANG" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CHUDE" EntityType="Self.CHUDE" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="DONDATHANG" EntityType="Self.DONDATHANG" Schema="dbo" store:Type="Tables" />
@@ -164,7 +164,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="cellphone1hModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="GKLTWModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="CHITIETDONTHANG">
           <Key>
             <PropertyRef Name="MaDonHang" />
@@ -302,7 +302,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="cellphone1hEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="GKLTWEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="CHITIETDONTHANGs" EntityType="Self.CHITIETDONTHANG" />
           <EntitySet Name="CHUDEs" EntityType="Self.CHUDE" />
           <EntitySet Name="DONDATHANGs" EntityType="Self.DONDATHANG" />
@@ -335,9 +335,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="cellphone1hModelStoreContainer" CdmEntityContainer="cellphone1hEntities">
+        <EntityContainerMapping StorageEntityContainer="GKLTWModelStoreContainer" CdmEntityContainer="GKLTWEntities">
           <EntitySetMapping Name="CHITIETDONTHANGs">
-            <EntityTypeMapping TypeName="cellphone1hModel.CHITIETDONTHANG">
+            <EntityTypeMapping TypeName="GKLTWModel.CHITIETDONTHANG">
               <MappingFragment StoreEntitySet="CHITIETDONTHANG">
                 <ScalarProperty Name="MaDonHang" ColumnName="MaDonHang" />
                 <ScalarProperty Name="MaSanPham" ColumnName="MaSanPham" />
@@ -347,7 +347,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CHUDEs">
-            <EntityTypeMapping TypeName="cellphone1hModel.CHUDE">
+            <EntityTypeMapping TypeName="GKLTWModel.CHUDE">
               <MappingFragment StoreEntitySet="CHUDE">
                 <ScalarProperty Name="MaCD" ColumnName="MaCD" />
                 <ScalarProperty Name="TenChuDe" ColumnName="TenChuDe" />
@@ -355,7 +355,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DONDATHANGs">
-            <EntityTypeMapping TypeName="cellphone1hModel.DONDATHANG">
+            <EntityTypeMapping TypeName="GKLTWModel.DONDATHANG">
               <MappingFragment StoreEntitySet="DONDATHANG">
                 <ScalarProperty Name="MaDonHang" ColumnName="MaDonHang" />
                 <ScalarProperty Name="Dathanhtoan" ColumnName="Dathanhtoan" />
@@ -367,7 +367,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="KHACHHANGs">
-            <EntityTypeMapping TypeName="cellphone1hModel.KHACHHANG">
+            <EntityTypeMapping TypeName="GKLTWModel.KHACHHANG">
               <MappingFragment StoreEntitySet="KHACHHANG">
                 <ScalarProperty Name="MaKH" ColumnName="MaKH" />
                 <ScalarProperty Name="HoTen" ColumnName="HoTen" />
@@ -381,7 +381,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="NHACUNGCAPs">
-            <EntityTypeMapping TypeName="cellphone1hModel.NHACUNGCAP">
+            <EntityTypeMapping TypeName="GKLTWModel.NHACUNGCAP">
               <MappingFragment StoreEntitySet="NHACUNGCAP">
                 <ScalarProperty Name="MaNCC" ColumnName="MaNCC" />
                 <ScalarProperty Name="TenNCC" ColumnName="TenNCC" />
@@ -391,7 +391,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SANPHAMs">
-            <EntityTypeMapping TypeName="cellphone1hModel.SANPHAM">
+            <EntityTypeMapping TypeName="GKLTWModel.SANPHAM">
               <MappingFragment StoreEntitySet="SANPHAM">
                 <ScalarProperty Name="MaSanPham" ColumnName="MaSanPham" />
                 <ScalarProperty Name="TenSanPham" ColumnName="TenSanPham" />

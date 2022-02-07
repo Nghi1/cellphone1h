@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Tai nghe";
 }
 
 <!------------------------>
@@ -20,12 +20,12 @@
                 <div class="wrapper">
                     <!-- first section -->
                     <div class="product-sec1 px-sm-4 px-3 py-sm-5  py-3 mb-4">
-                        <h3 class="heading-tittle text-center font-italic">Những sản phẩm mới</h3>
+                        <h3 class="heading-tittle text-center font-italic">Những chiếc điện thoại mới</h3>
                         <div class="row">
                             @foreach (var item in ViewBag.SanPham)
                             {
                                 <div class="col-md-4 product-men mt-5">
-                                    <div class="men-pro-item simpleCart_shelfItem">                                  
+                                    <div class="men-pro-item simpleCart_shelfItem">
                                         <div class="men-thumb-item text-center">
                                             <img src="@item.Anhbia" height="290" width="250" alt="">
                                             <div class="men-cart-pro">
@@ -44,11 +44,11 @@
                                             </div>
                                             <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
                                                 <form action="#" method="post">
-                                                    <fieldset>                                                                                  
-                                                        <a  href="@Url.Action("ThemVaoGio", "Home", new { id=item.MaSanPham})">Thêm vào giỏ</a>
-                                            </fieldset>
-                                            </form>
-                                        </div>
+                                                    <fieldset>
+                                                        <a href="@Url.Action("ThemVaoGio", "Home", new { id=item.MaSanPham})">Thêm vào giỏ</a>
+                                                    </fieldset>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

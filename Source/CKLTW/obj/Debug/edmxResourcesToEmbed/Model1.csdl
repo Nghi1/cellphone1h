@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="cellphone1hModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="GKLTWModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="CHITIETDONTHANG">
     <Key>
       <PropertyRef Name="MaDonHang" />
@@ -137,7 +137,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="cellphone1hEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="GKLTWEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="CHITIETDONTHANGs" EntityType="Self.CHITIETDONTHANG" />
     <EntitySet Name="CHUDEs" EntityType="Self.CHUDE" />
     <EntitySet Name="DONDATHANGs" EntityType="Self.DONDATHANG" />

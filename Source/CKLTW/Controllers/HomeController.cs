@@ -9,7 +9,7 @@ namespace CKLTW.Controllers
 {
     public class HomeController : Controller
     {
-        cellphone1hEntities db = new cellphone1hEntities();
+        GKLTWEntities db = new GKLTWEntities();
         // GET: SanPham
         [ChildActionOnly]
         public ActionResult TaiKhoan()
@@ -20,7 +20,51 @@ namespace CKLTW.Controllers
         }
         public ActionResult Index()
         {
-            var sanpham = db.SANPHAMs.Where(sp => sp.DaXoa == false)
+            var sanpham = db.SANPHAMs.Where(sp => sp.DaXoa == true)
+                .Select(sp => new SanPhamModels
+                {
+
+                    MaSanPham = sp.MaSanPham,
+                    TenSanPham = sp.TenSanPham,
+                    Anhbia = sp.Anhbia,
+                    Mota = sp.Mota,
+                    Giaban = sp.Giaban,
+                    Soluongton = sp.Soluongton,
+                    Ngaycapnhat = sp.Ngaycapnhat,
+                    MaCD = sp.MaCD,
+                    MaNCC = sp.MaNCC,
+                    Khuyenmai = sp.Khuyenmai,
+                    GiaKhuyenmai = (int)sp.Giaban * (double)(100 - sp.Khuyenmai) / 100
+
+                });
+            ViewBag.SanPham = sanpham;
+            return View();
+        }
+        public ActionResult DienThoai()
+        {
+            var sanpham = db.SANPHAMs.Where(sp => sp.MaCD == 1)
+                .Select(sp => new SanPhamModels
+                {
+
+                    MaSanPham = sp.MaSanPham,
+                    TenSanPham = sp.TenSanPham,
+                    Anhbia = sp.Anhbia,
+                    Mota = sp.Mota,
+                    Giaban = sp.Giaban,
+                    Soluongton = sp.Soluongton,
+                    Ngaycapnhat = sp.Ngaycapnhat,
+                    MaCD = sp.MaCD,
+                    MaNCC = sp.MaNCC,
+                    Khuyenmai = sp.Khuyenmai,
+                    GiaKhuyenmai = (int)sp.Giaban * (double)(100 - sp.Khuyenmai) / 100
+
+                });
+            ViewBag.SanPham = sanpham;
+            return View();
+        }
+        public ActionResult TaiNghe()
+        {
+            var sanpham = db.SANPHAMs.Where(sp => sp.MaCD == 2)
                 .Select(sp => new SanPhamModels
                 {
 
