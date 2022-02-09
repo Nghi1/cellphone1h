@@ -18,9 +18,33 @@ namespace CKLTW.Controllers
             ViewBag.TaiKhoan = tk;
             return PartialView("_TaiKhoanPartial");
         }
-        public ActionResult Index()
+        public ActionResult Index(string TimKiem="")
         {
-            var sanpham = db.SANPHAMs.Where(sp => sp.DaXoa == true)
+            if(TimKiem!="")
+            {
+                var sanpham = db.SANPHAMs.Where(sp => sp.TenSanPham.ToUpper().Contains(TimKiem.ToUpper()))
+                .Select(sp => new SanPhamModels
+                 {
+
+                     MaSanPham = sp.MaSanPham,
+                     TenSanPham = sp.TenSanPham,
+                     Anhbia = sp.Anhbia,
+                     Mota = sp.Mota,
+                     Giaban = sp.Giaban,
+                     Soluongton = sp.Soluongton,
+                     Ngaycapnhat = sp.Ngaycapnhat,
+                     MaCD = sp.MaCD,
+                     MaNCC = sp.MaNCC,
+                     Khuyenmai = sp.Khuyenmai,
+                     GiaKhuyenmai = (int)sp.Giaban * (double)(100 - sp.Khuyenmai) / 100
+
+                 });
+                ViewBag.SanPham = sanpham;
+                return View();
+            }
+            else
+            {
+                 var sanpham = db.SANPHAMs.Where(sp => sp.DaXoa == true)
                 .Select(sp => new SanPhamModels
                 {
 
@@ -39,6 +63,8 @@ namespace CKLTW.Controllers
                 });
             ViewBag.SanPham = sanpham;
             return View();
+            }
+           
         }
         public ActionResult DienThoai()
         {
@@ -84,29 +110,6 @@ namespace CKLTW.Controllers
             ViewBag.SanPham = sanpham;
             return View();
         }
-        public ActionResult TimKiemSP(string TimKiem="")
-        {
-                var sanpham = db.SANPHAMs.Where(sp => sp.TenSanPham.ToUpper().Contains(TimKiem.ToUpper()))
-                    .Select(sp => new SanPhamModels
-                {
-
-                    MaSanPham = sp.MaSanPham,
-                    TenSanPham = sp.TenSanPham,
-                    Anhbia = sp.Anhbia,
-                    Mota = sp.Mota,
-                    Giaban = sp.Giaban,
-                    Soluongton = sp.Soluongton,
-                    Ngaycapnhat = sp.Ngaycapnhat,
-                    MaCD = sp.MaCD,
-                    MaNCC = sp.MaNCC,
-                    Khuyenmai = sp.Khuyenmai,
-                    GiaKhuyenmai = (int)sp.Giaban * (double)(100 - sp.Khuyenmai) / 100
-
-                });
-                ViewBag.SanPham = sanpham;
-                return View();
-        }
-
         public ActionResult Chitiet(int id)
         {
             var sanpham = db.SANPHAMs.Where(sp => sp.DaXoa == false && sp.MaSanPham == id)
