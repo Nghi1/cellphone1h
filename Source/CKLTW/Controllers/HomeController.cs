@@ -44,7 +44,7 @@ namespace CKLTW.Controllers
             }
             else
             {
-                 var sanpham = db.SANPHAMs.Where(sp => sp.DaXoa == true)
+                 var sanpham = db.SANPHAMs
                 .Select(sp => new SanPhamModels
                 {
 
@@ -174,12 +174,70 @@ namespace CKLTW.Controllers
             var taikhoan = db.KHACHHANGs
                 .Where(x => x.TaiKhoan == model.TaiKhoan && x.MatKhau == model.MatKhau)
                 .FirstOrDefault();
-            if (taikhoan != null)
+            if (taikhoan != null && taikhoan.TaiKhoan != "admin")
             {
                 Session["TAIKHOAN"] = taikhoan;
                 Session["idTK"] = taikhoan.MaKH;
                 return RedirectToAction("Index", "Home");
             }
+            if (taikhoan != null && taikhoan.TaiKhoan == "admin")
+            {
+                Session["TAIKHOAN"] = taikhoan;
+                Session["idTK"] = taikhoan.MaKH;
+                return RedirectToAction("AdminPage", "Home");
+            }
+            return View();
+        }
+        public ActionResult AdminPage()
+        {
+            var listOrder = db.DONDATHANGs
+                .Select(sp => new DonHangModels
+                {
+                    MaDonHang= sp.MaDonHang,
+                    Dathanhtoan = sp.Dathanhtoan,
+                    Tinhtranggiaohang = sp.Tinhtranggiaohang,
+                    Ngaydat = sp.Ngaydat,
+                    Ngaygiao = sp.Ngaygiao,
+                    MaKH = sp.MaKH,
+                });
+            ViewBag.listOrder = listOrder;
+            var detailOrder = db.CHITIETDONTHANGs
+               .Select(sp => new ChiTietDonHang
+               {
+                   MaDonHang = sp.MaDonHang,
+                   MaSanPham = sp.MaSanPham,
+                   Soluong=sp.Soluong,
+                   Dongia = sp.Dongia,
+               });
+            ViewBag.detailOrder = detailOrder;
+            var khachHang = db.KHACHHANGs.Where(sp=>sp.MaKH!=2)
+              .Select(sp => new TaiKhoanModels
+              {
+                  MaKH = sp.MaKH,
+                  HoTen = sp.HoTen,
+                  DiaChi = sp.DiaChi,
+                  DienThoai = sp.DienThoai,
+                  Email = sp.Email,
+              });
+            ViewBag.khachHang = khachHang;
+            var sanpham = db.SANPHAMs
+               .Select(sp => new SanPhamModels
+               {
+
+                   MaSanPham = sp.MaSanPham,
+                   TenSanPham = sp.TenSanPham,
+                   Anhbia = sp.Anhbia,
+                   Mota = sp.Mota,
+                   Giaban = sp.Giaban,
+                   Soluongton = sp.Soluongton,
+                   Ngaycapnhat = sp.Ngaycapnhat,
+                   MaCD = sp.MaCD,
+                   MaNCC = sp.MaNCC,
+                   Khuyenmai = sp.Khuyenmai,
+                   GiaKhuyenmai = (int)sp.Giaban * (double)(100 - sp.Khuyenmai) / 100
+
+               });
+            ViewBag.SanPham = sanpham;
             return View();
         }
         [ChildActionOnly]

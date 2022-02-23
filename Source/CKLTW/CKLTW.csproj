@@ -159,6 +159,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\ChiTietDonHang.cs" />
+    <Compile Include="Models\DonHangModels.cs" />
     <Compile Include="Models\SanPhamModels.cs" />
     <Compile Include="Models\TaiKhoanModels.cs" />
     <Compile Include="NHACUNGCAP.cs">
@@ -365,6 +367,7 @@
     <Content Include="Views\Home\_ThanhTien.cshtml" />
     <Content Include="Views\Home\TaiNghe.cshtml" />
     <Content Include="Views\Home\DienThoai.cshtml" />
+    <Content Include="Views\Home\AdminPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
