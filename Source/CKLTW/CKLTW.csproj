@@ -161,6 +161,7 @@
     </Compile>
     <Compile Include="Models\ChiTietDonHang.cs" />
     <Compile Include="Models\DonHangModels.cs" />
+    <Compile Include="Models\MailHelper.cs" />
     <Compile Include="Models\SanPhamModels.cs" />
     <Compile Include="Models\TaiKhoanModels.cs" />
     <Compile Include="NHACUNGCAP.cs">
@@ -192,6 +193,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\template\neworder.html" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\creditly.css" />
     <Content Include="css\easy-responsive-tabs.css" />

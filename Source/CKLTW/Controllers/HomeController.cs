@@ -178,12 +178,20 @@ namespace CKLTW.Controllers
             {
                 Session["TAIKHOAN"] = taikhoan;
                 Session["idTK"] = taikhoan.MaKH;
+                Session["Email"] = taikhoan.Email;
+                Session["Hoten"] = taikhoan.HoTen;
+                Session["SDT"] = taikhoan.DienThoai;
+                Session["Diachi"] = taikhoan.DiaChi;
                 return RedirectToAction("Index", "Home");
             }
             if (taikhoan != null && taikhoan.TaiKhoan == "admin")
             {
                 Session["TAIKHOAN"] = taikhoan;
                 Session["idTK"] = taikhoan.MaKH;
+                Session["Email"] = taikhoan.Email;
+                Session["Hoten"] = taikhoan.HoTen;
+                Session["SDT"] = taikhoan.DienThoai;
+                Session["Diachi"] = taikhoan.DiaChi;
                 return RedirectToAction("AdminPage", "Home");
             }
             return View();
@@ -355,6 +363,15 @@ namespace CKLTW.Controllers
                 db.CHITIETDONTHANGs.AddRange(listOrderDetail);
                 db.SaveChanges();
             }
+            string content = System.IO.File.ReadAllText(Server.MapPath("~/content/template/neworder.html"));
+            string shipName = (string)Session["Hoten"];
+            string mobile = (string)Session["SDT"];
+            string address = (string)Session["Diachi"];
+            content = content.Replace("{{CustomerName}}", shipName);
+            content = content.Replace("{{Phone}}", mobile);
+            content = content.Replace("{{Address}}", address);
+            string email = (string)Session["Email"];
+            new MailHelper().SendMail(email, "Don Hang Tu Shop Cellphone1h", content);
             Session["GioHang"] = null;
             return View();
         }
