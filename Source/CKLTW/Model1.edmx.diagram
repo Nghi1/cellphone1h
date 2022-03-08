@@ -4,18 +4,18 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="e3cb92ad2a5b407280cce0844ecff735" Name="Diagram1">
-        <EntityTypeShape EntityType="GKLTWModel.CHITIETDONTHANG" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="GKLTWModel.CHUDE" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="GKLTWModel.DONDATHANG" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="GKLTWModel.KHACHHANG" Width="1.5" PointX="0.75" PointY="9.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="GKLTWModel.NHACUNGCAP" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
-        <EntityTypeShape EntityType="GKLTWModel.SANPHAM" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <AssociationConnector Association="GKLTWModel.FK_CHITIETDONTHANG_DONDATHANG" ManuallyRouted="false" />
-        <AssociationConnector Association="GKLTWModel.FK_CHITIETDONTHANG_SACH" ManuallyRouted="false" />
-        <AssociationConnector Association="GKLTWModel.FK_Chude" ManuallyRouted="false" />
-        <AssociationConnector Association="GKLTWModel.FK_DONDATHANG_KHACHHANG" ManuallyRouted="false" />
-        <AssociationConnector Association="GKLTWModel.FK_NhaXB" ManuallyRouted="false" />
+      <Diagram DiagramId="e7d95a80310d42ea93697d658f795ef9" Name="Diagram1">
+        <EntityTypeShape EntityType="cellphone1hrModel.CHITIETDONTHANG" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="cellphone1hrModel.CHUDE" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="cellphone1hrModel.DONDATHANG" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="cellphone1hrModel.KHACHHANG" Width="1.5" PointX="0.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="cellphone1hrModel.NHACUNGCAP" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="cellphone1hrModel.SANPHAM" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="cellphone1hrModel.FK_CHITIETDONTHANG_DONDATHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="cellphone1hrModel.FK_CHITIETDONTHANG_SACH" ManuallyRouted="false" />
+        <AssociationConnector Association="cellphone1hrModel.FK_Chude" ManuallyRouted="false" />
+        <AssociationConnector Association="cellphone1hrModel.FK_DONDATHANG_KHACHHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="cellphone1hrModel.FK_NhaXB" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

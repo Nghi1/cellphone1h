@@ -9,7 +9,7 @@ namespace CKLTW.Controllers
 {
     public class HomeController : Controller
     {
-        GKLTWEntities db = new GKLTWEntities();
+        cellphone1hrEntities db = new cellphone1hrEntities();
         // GET: SanPham
         [ChildActionOnly]
         public ActionResult TaiKhoan()
@@ -371,7 +371,7 @@ namespace CKLTW.Controllers
             content = content.Replace("{{Phone}}", mobile);
             content = content.Replace("{{Address}}", address);
             string email = (string)Session["Email"];
-            new MailHelper().SendMail(email, "Don Hang Tu Shop Cellphone1h", content);
+            new MailHelper().SendMail(email, "Đơn hàng mới từ cửa hàng Cellphone1h", content);
             Session["GioHang"] = null;
             return View();
         }

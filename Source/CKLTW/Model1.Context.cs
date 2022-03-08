@@ -13,10 +13,10 @@ namespace CKLTW
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class GKLTWEntities : DbContext
+    public partial class cellphone1hrEntities : DbContext
     {
-        public GKLTWEntities()
-            : base("name=GKLTWEntities")
+        public cellphone1hrEntities()
+            : base("name=cellphone1hrEntities")
         {
         }
     

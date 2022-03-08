@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="GKLTWModelStoreContainer" CdmEntityContainer="GKLTWEntities">
+  <EntityContainerMapping StorageEntityContainer="cellphone1hrModelStoreContainer" CdmEntityContainer="cellphone1hrEntities">
     <EntitySetMapping Name="CHITIETDONTHANGs">
-      <EntityTypeMapping TypeName="GKLTWModel.CHITIETDONTHANG">
+      <EntityTypeMapping TypeName="cellphone1hrModel.CHITIETDONTHANG">
         <MappingFragment StoreEntitySet="CHITIETDONTHANG">
           <ScalarProperty Name="MaDonHang" ColumnName="MaDonHang" />
           <ScalarProperty Name="MaSanPham" ColumnName="MaSanPham" />
@@ -12,7 +12,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CHUDEs">
-      <EntityTypeMapping TypeName="GKLTWModel.CHUDE">
+      <EntityTypeMapping TypeName="cellphone1hrModel.CHUDE">
         <MappingFragment StoreEntitySet="CHUDE">
           <ScalarProperty Name="MaCD" ColumnName="MaCD" />
           <ScalarProperty Name="TenChuDe" ColumnName="TenChuDe" />
@@ -20,7 +20,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="DONDATHANGs">
-      <EntityTypeMapping TypeName="GKLTWModel.DONDATHANG">
+      <EntityTypeMapping TypeName="cellphone1hrModel.DONDATHANG">
         <MappingFragment StoreEntitySet="DONDATHANG">
           <ScalarProperty Name="MaDonHang" ColumnName="MaDonHang" />
           <ScalarProperty Name="Dathanhtoan" ColumnName="Dathanhtoan" />
@@ -32,7 +32,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="KHACHHANGs">
-      <EntityTypeMapping TypeName="GKLTWModel.KHACHHANG">
+      <EntityTypeMapping TypeName="cellphone1hrModel.KHACHHANG">
         <MappingFragment StoreEntitySet="KHACHHANG">
           <ScalarProperty Name="MaKH" ColumnName="MaKH" />
           <ScalarProperty Name="HoTen" ColumnName="HoTen" />
@@ -46,7 +46,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="NHACUNGCAPs">
-      <EntityTypeMapping TypeName="GKLTWModel.NHACUNGCAP">
+      <EntityTypeMapping TypeName="cellphone1hrModel.NHACUNGCAP">
         <MappingFragment StoreEntitySet="NHACUNGCAP">
           <ScalarProperty Name="MaNCC" ColumnName="MaNCC" />
           <ScalarProperty Name="TenNCC" ColumnName="TenNCC" />
@@ -56,7 +56,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="SANPHAMs">
-      <EntityTypeMapping TypeName="GKLTWModel.SANPHAM">
+      <EntityTypeMapping TypeName="cellphone1hrModel.SANPHAM">
         <MappingFragment StoreEntitySet="SANPHAM">
           <ScalarProperty Name="MaSanPham" ColumnName="MaSanPham" />
           <ScalarProperty Name="TenSanPham" ColumnName="TenSanPham" />
