@@ -286,3 +286,4 @@ D:\hoctap\web\BuiMinhThai_VuThanhNghi\Source\CKLTW\obj\Debug\CKLTW.csproj.CoreCo
 D:\hoctap\web\BuiMinhThai_VuThanhNghi\Source\CKLTW\obj\Debug\CKLTW.csproj.CopyComplete
 D:\hoctap\web\BuiMinhThai_VuThanhNghi\Source\CKLTW\obj\Debug\CKLTW.dll
 D:\hoctap\web\BuiMinhThai_VuThanhNghi\Source\CKLTW\obj\Debug\CKLTW.pdb
+D:\hoctap\web\BuiMinhThai_VuThanhNghi\Source\CKLTW\obj\Debug\CKLTW.csproj.AssemblyReference.cache

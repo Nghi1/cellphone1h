@@ -112,7 +112,7 @@ namespace CKLTW.Controllers
         }
         public ActionResult Chitiet(int id)
         {
-            var sanpham = db.SANPHAMs.Where(sp => sp.DaXoa == false && sp.MaSanPham == id)
+            var sanpham = db.SANPHAMs.Where(sp => sp.MaSanPham == id)
                 .Select(sp => new SanPhamModels
                 {
 
