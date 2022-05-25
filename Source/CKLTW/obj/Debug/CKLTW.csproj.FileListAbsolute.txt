@@ -282,7 +282,6 @@ D:\hoctap\web\BuiMinhThai_VuThanhNghi\Source\CKLTW\bin\roslyn\vbc.exe.config
 D:\hoctap\web\BuiMinhThai_VuThanhNghi\Source\CKLTW\bin\roslyn\vbc.rsp
 D:\hoctap\web\BuiMinhThai_VuThanhNghi\Source\CKLTW\bin\roslyn\VBCSCompiler.exe
 D:\hoctap\web\BuiMinhThai_VuThanhNghi\Source\CKLTW\bin\roslyn\VBCSCompiler.exe.config
-D:\hoctap\web\BuiMinhThai_VuThanhNghi\Source\CKLTW\obj\Debug\CKLTW.csprojAssemblyReference.cache
 D:\hoctap\web\BuiMinhThai_VuThanhNghi\Source\CKLTW\obj\Debug\CKLTW.csproj.CoreCompileInputs.cache
 D:\hoctap\web\BuiMinhThai_VuThanhNghi\Source\CKLTW\obj\Debug\CKLTW.csproj.CopyComplete
 D:\hoctap\web\BuiMinhThai_VuThanhNghi\Source\CKLTW\obj\Debug\CKLTW.dll

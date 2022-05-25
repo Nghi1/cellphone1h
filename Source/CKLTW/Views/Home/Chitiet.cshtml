@@ -1,8 +1,4 @@
 ﻿
-@{
-    ViewBag.Title = "Chi Tiết";
-}
-
 <div class="banner-bootom-w3-agileits py-5">
     <div class="container py-xl-4 py-lg-2">
         <!-- tittle heading -->
@@ -16,12 +12,8 @@
         <div class="row">
             <div class="col-lg-5 col-md-8 single-right-left ">
                 <div class="grid images_3_of_2">
-                    <div class="flexslider">
-                        <ul class="slides">
-                            <img width="400" height="500" src="@ViewBag.SanPham.Anhbia"
-                           
-
-                        </ul>
+                    <div class="flexslider">     
+                            <img width="400" height="500" src="@ViewBag.SanPham.Anhbia"/>                     
                         <div class="clearfix"></div>
                     </div>
                 </div>
@@ -69,16 +61,7 @@
                     <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
                         <form action="#" method="post">
                             <fieldset>
-                                <input type="hidden" name="cmd" value="_cart" />
-                                <input type="hidden" name="add" value="1" />
-                                <input type="hidden" name="business" value=" " />
-                                <input type="hidden" name="item_name" value="Samsung Galaxy J7 Prime" />
-                                <input type="hidden" name="amount" value="200.00" />
-                                <input type="hidden" name="discount_amount" value="1.00" />
-                                <input type="hidden" name="currency_code" value="USD" />
-                                <input type="hidden" name="return" value=" " />
-                                <input type="hidden" name="cancel_return" value=" " />
-                                <input type="submit" name="submit" value="Add to cart" class="button" />
+                                <a href="@Url.Action("ThemVaoGio", "Home", new { id=ViewBag.SanPham.MaSanPham})">Thêm vào giỏ</a>
                             </fieldset>
                         </form>
                     </div>
